@@ -1,0 +1,6 @@
+dados = read.csv("dados_turismo.csv", header= T, sep = ".")
+str(dados)
+summary(dados)
+dados$sexo = factor(dados$sexo, levels = c(1, 2), labels = c("masculino", "feminino"))
+dados$estabelecimento = factor(dados$estabelecimento, levels = c("P", "H"), labels = c("pousada", "hotel"))
+
